@@ -7,7 +7,7 @@ root = Tk()
 screen_width = root.winfo_screenwidth()
 screen_height = root.winfo_screenheight()
 
-# Set the window size to 80% of the screen dimensions
+# Set the window size to a fraction of the screen dimensions
 root.geometry(f"{int(screen_width * 0.71)}x{int(screen_height * 0.55)}")
 root.title("Interface Range Generator")
 
@@ -194,7 +194,6 @@ submit_button.grid(row=2, column=0)
 
 root.columnconfigure(0, weight=1)
 root.columnconfigure(1, weight=1)
-#root.rowconfigure(0, weight=1)
 root.rowconfigure(1, weight=1)
 root.rowconfigure(2, weight=1)
 
